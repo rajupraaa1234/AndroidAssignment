@@ -44,7 +44,7 @@
     <Button
         android:id="@+id/fourth"
         android:layout_width="wrap_content"
-        android:text="4"
+        android:text="4 and 6"
         android:layout_marginTop="@dimen/dp5"
         android:layout_gravity="center"
         android:onClick="onClickHandler"
