@@ -42,7 +42,14 @@ class MainActivity : AppCompatActivity() {
             R.id.third->{openPopup()}
             R.id.fourth->{openForthTask()}
             R.id.ninth->{openNinthTask()}
+            R.id.Tenth->{openTenthTask()}
         }
+    }
+
+    private fun openTenthTask() {
+        var intent : Intent
+        intent = Intent(this,TenthTask::class.java)
+        startActivity(intent)
     }
 
     private fun openNinthTask() {

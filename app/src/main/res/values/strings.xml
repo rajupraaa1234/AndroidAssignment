@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AndroidAssignment</string>
-    <string name="calculating_estimation_time_please_wait_until_1_charge_incraese">Calculating Estimation Time Please Wait until 1% charge incraese</string>
+    <string name="calculating_estimation_time_please_wait_until_1_charge_incraese">Calculating Estimation Time to fully charge battery Please Wait until 1% increase...</string>
+    <string name="wishing_bday">May God bless you today on your birthday and every day after.May you be comforted by His presence in your life</string>
+    <string name="wishes">Wish you very happy birthday</string>
+    <string name="set_birthday_date_for_repetition">Set Birthday Date for repetition</string>
+    <string name="set_birthday_date">Set Birthday Date</string>
 </resources>

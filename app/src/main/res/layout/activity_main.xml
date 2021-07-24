@@ -59,4 +59,13 @@
         android:onClick="onClickHandler"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/Tenth"
+        android:layout_width="wrap_content"
+        android:text="10"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_gravity="center"
+        android:onClick="onClickHandler"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

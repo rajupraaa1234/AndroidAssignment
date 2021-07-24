@@ -50,7 +50,7 @@ class PowerConnectionBR internal constructor(var textView: TextView, extext: Tex
                 }
             }
         }
-        textView.text = "Charging Status : $level%"
+        textView.text = "Current Charging Status : $level%"
         proBar.setProgress(level)
         if (intent.action == Intent.ACTION_POWER_CONNECTED) {
             Toast.makeText(context, "The device is charging", Toast.LENGTH_SHORT).show()
