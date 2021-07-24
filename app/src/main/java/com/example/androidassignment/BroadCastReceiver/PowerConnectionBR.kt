@@ -44,7 +44,7 @@ class PowerConnectionBR internal constructor(var textView: TextView, extext: Tex
                    // Log.i("MYChargingTab", "Diff :$timediff")
                     val timeEstimate = findExpactedTime(timediff, level2)
                    // Log.i("MYChargingTab", "Estimate :  $timeEstimate")
-                    extxt.text = timeEstimate
+                    extxt.text = "Time Estimate to full charge : " + timeEstimate
                 } catch (e: ParseException) {
                     e.printStackTrace()
                 }
