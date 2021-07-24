@@ -3,7 +3,9 @@ package com.example.androidassignment.BroadCastReceiver;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 import java.util.Date;
 
@@ -24,6 +26,11 @@ public abstract class PhonecallReceiver extends BroadcastReceiver {
         else{
             String stateStr = intent.getExtras().getString(TelephonyManager.EXTRA_STATE);
             String number = intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
+            String str = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER);
+            Bundle bundle = intent.getExtras();
+            String phoneNumber= bundle.getString("incoming_number");
+            Log.i("MyPhoneNumber","Number : " + str);
+            Log.i("MyPhoneNumber","Number c: " + phoneNumber);
             int state = 0;
             if(stateStr.equals(TelephonyManager.EXTRA_STATE_IDLE)){
                 state = TelephonyManager.CALL_STATE_IDLE;

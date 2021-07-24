@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidAssignment</string>
+    <string name="calculating_estimation_time_please_wait_until_1_charge_incraese">Calculating Estimation Time Please Wait until 1% charge incraese</string>
 </resources>

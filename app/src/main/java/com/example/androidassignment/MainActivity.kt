@@ -1,10 +1,15 @@
 package com.example.androidassignment
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +20,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         init()
+
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+            != PackageManager.PERMISSION_GRANTED){
+
+            ActivityCompat.requestPermissions(this,
+                arrayOf(Manifest.permission.READ_PHONE_STATE),
+                1)
+        }
     }
 
     fun init(){
@@ -28,7 +41,14 @@ class MainActivity : AppCompatActivity() {
             R.id.second->{setColorOfBackColor()}
             R.id.third->{openPopup()}
             R.id.fourth->{openForthTask()}
+            R.id.ninth->{openNinthTask()}
         }
+    }
+
+    private fun openNinthTask() {
+        var intent : Intent
+        intent = Intent(this,NinthTask::class.java)
+        startActivity(intent)
     }
 
     private fun openForthTask() {

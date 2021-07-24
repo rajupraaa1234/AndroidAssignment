@@ -10,8 +10,9 @@ public class CallReceiver extends PhonecallReceiver{
     @Override
     protected void onIncomingCallReceived(Context ctx, String number, Date start)
     {
+
         Toast.makeText(ctx, "Calling from " + number, Toast.LENGTH_SHORT).show();
-        Log.i("CallReceiver","onIncomingCallReceived");
+        Log.i("CallReceiver","onIncomingCallReceived" + number);
         //
     }
 
