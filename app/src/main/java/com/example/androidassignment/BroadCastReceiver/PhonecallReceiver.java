@@ -22,6 +22,7 @@ public abstract class PhonecallReceiver extends BroadcastReceiver {
         //We listen to two intents.  The new outgoing call only tells us of an outgoing call.  We use it to get the number.
         if (intent.getAction().equals("android.intent.action.NEW_OUTGOING_CALL")) {
             savedNumber = intent.getExtras().getString("android.intent.extra.PHONE_NUMBER");
+
         }
         else{
             String stateStr = intent.getExtras().getString(TelephonyManager.EXTRA_STATE);
