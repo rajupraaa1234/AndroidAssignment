@@ -87,7 +87,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setColorOfBackColor() {
-        textView.setBackgroundResource(R.drawable.green_back);
+        var intent : Intent
+        intent = Intent(this,ClassTask2::class.java)
+        startActivity(intent)
+      //  textView.setBackgroundResource(R.drawable.green_back);
     }
 
     private fun openFirstTask() {
