@@ -23,9 +23,7 @@ class TenthTask : AppCompatActivity() {
 
     fun TenthTask(view : View){
         when(view.id){
-            R.id.setExact->{
-                setAlarm { alarmService.setExactAlarm(it) }
-            }
+            R.id.setExact->{ setAlarm { alarmService.setExactAlarm(it) } }
             R.id.setRepetitive->{setAlarm { alarmService.setRepetitiveAlarm(it) } }
         }
     }
