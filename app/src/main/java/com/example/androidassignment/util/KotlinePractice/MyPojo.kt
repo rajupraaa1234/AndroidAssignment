@@ -42,3 +42,14 @@ class B : A(){
 data class DataClassExample constructor(val name : String, val id:Int){
 
 }
+
+class Bike{
+    lateinit var BikeName : String
+    var BikeNumber : Int = -1
+
+    constructor(name : String,number:Int){
+        this.BikeName = name
+        this.BikeNumber = number
+    }
+
+}

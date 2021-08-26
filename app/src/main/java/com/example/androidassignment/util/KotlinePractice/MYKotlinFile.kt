@@ -62,6 +62,52 @@ fun main(){
     }.StartRun()     /** In apply we can execute method which is available in Person class after init object */
                      /** But in with we cann't */
 
+
+
+    /** Collections */
+                /** mutable list (Dynamic Size)*/
+            var list = mutableListOf<String>()
+            list.add("raju")
+            list.add("kumar")
+            println()
+            for(i in list){
+                print(i+" ")
+            }
+            var arr = ArrayList<String>()
+
+           /** Immutable map */
+           var map = mapOf<String,String>("raju" to "kumar","rahul" to "gupta")
+           for(i in map)
+               println(i.key + " " + i.value)
+           /** Mutable map */
+           var Mmap = HashMap<Int,String>()
+           Mmap.put(1,"Raju")
+           Mmap.put(2,"kumar")
+           Mmap.put(3,"rahul")
+           for(i in Mmap){
+               println("${i.key}  ${i.value}")
+           }
+
+          /** Immutable Set (Fixed Size,read only )*/
+          var set = setOf<Int>(1,2,3,4,1,2,3,5,6,6,5,7)
+          for(i in set){
+              println(i)
+          }
+
+          /** mutable Set (Dynamic Size and Read and Write Both )*/
+          var Mset = HashSet<Int>()
+            Mset.add(1)
+            Mset.add(2)
+            Mset.add(3)
+            Mset.add(4)
+            Mset.add(5)
+         for(i in Mset){
+             println(i)
+         }
+
+
+
+
 }
 
 class Program{
